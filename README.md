@@ -21,7 +21,7 @@
 <h4>
     <a href="">View Demo</a>
   <span> · </span>
-    <a href="https://github.com/Priyanshu88/Jobs_App/blob/master/README.md">Documentation</a>
+    <a href="https://github.com/Priyanshu88/Jobs_App/blob/main/README.md">Documentation</a>
   <span> · </span>
     <a href="https://github.com/Priyanshu88/Jobs_App/issues">Report Bug</a>
   <span> · </span>
@@ -94,9 +94,8 @@ exp://exp.host/@priyanshu_pandey/jobs-app?release-channel=default
     <li><a href="https://docs.expo.dev/workflow/expo-cli">Expo</a></li>
     <li><a href="https://reactnative.dev">React Native</a></li>
   </ul>
-</details>
 
-<details>
+</details>
 
 <details>
 <summary>API</summary>
@@ -117,9 +116,9 @@ exp://exp.host/@priyanshu_pandey/jobs-app?release-channel=default
 <!--     <td>
       <a href="#"><img src="https://user-images.githubusercontent.com/99184393/177784603-d69e9d02-721a-4bce-b9b3-949165d2edeb.png" alt="" width="30" height="30" /></a>
 </td> -->
-<!--     <td>
-  <a href="#"><img src="https://user-images.githubusercontent.com/99184393/179383376-874f547c-4e6f-4826-850e-706b009e7e2b.png" alt="" width="30" height="30" /></a>
-</td> -->
+    <td>
+  <a href="#"><img src="https://global-uploads.webflow.com/5fadb14c46b287ad224b60b9/60a474930669747a74cea436_RapidAPI.png" alt="" width="30" height="30" /></a>
+</td>
     <td>
   <a href="#google"><img src="https://user-images.githubusercontent.com/99184393/180462270-ea4a249c-627c-4479-9431-5c3fd25454c4.png" alt="Google" width="30" height="30" /></a>
 </td>
@@ -146,8 +145,7 @@ exp://exp.host/@priyanshu_pandey/jobs-app?release-channel=default
 
 ### :bangbang: Prerequisites
 
-- Sign up for a Firebase account <a href='https://firebase.google.com'>HERE</a>
-- Sign up for a StepZen account <a href='https://stepzen.com'>HERE</a>
+- Sign up for a RapidAPI account <a href='https://rapidapi.com/'>HERE</a>
 - Install Node JS in your computer <a href='https://nodejs.org/en/'>HERE</a>
 
 ### :gear: Installation
@@ -164,181 +162,40 @@ Installing Expo CLI
 npm install --global expo-cli
 ```
 
+Create Jobs_App folder and
+
 Initializing the project
 
 ```
-npx create-expo-app --template my-app
-```
-
-```
-cd my-app
+npx create-expo-app@latest -e with-router ./
 ```
 
 Install dependencies
 
-<hr />
+`expo-font`, `axios`, `react-native-dotenv`.
 
 <div align="center">
-<a href="#instagram"><img src="https://static-00.iconduck.com/assets.00/tailwind-css-icon-512x64-vzqzx6f0.png" alt="Instagram" width="" height="30" /></a>
+<a href="#instagram"><img src="https://www.sendsms.ro/wp-content/uploads/2021/05/RapidAPI-logo-blue-1.png" alt="Instagram" width="" height="70" /></a>
 </div>
 
-### Setup Tailwind CSS
-
-![](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
-
-Install
-
-```jsx
-npm install tailwind-rn
-```
-
-Run the following command to automatically add `tailwind-rn` to your React Native project:
-
-```
-npx setup-tailwind-rn
-```
-
-Import TailwindProvider and `tailwind.json` in the root of app (`App.tsx`)
-
-```tsx
-import { TailwindProvider } from "tailwind-rn";
-import utilities from "./tailwind.json";
-```
-
-Wrap the root of your app into TailwindProvider
-
-```tsx
-// @ts-ignore -TailwindProvider is missing a type defination
-<TailwindProvider utilities={utilities}>
-  <MyComponent />
-</TailwindProvider>
-```
-
-update `tailwind.config.js` file
-
-```jsx
-module.exports = {
-  content: ["./**/*.tsx"],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
-  corePlugins: require("tailwind-rn/unsupported-core-plugins"),
-};
-```
-
-useTailwind
-
-<!--- React hook, which returns a `tailwind` function, that accepts a string with class names. This function returns an object of styles, which can be applied to a React Native view via `style` property. --->
-
-```tsx
-import { useTailwind } from "tailwind-rn";
-
-const MyComponent = () => {
-  const tw = useTailwind();
-
-  return <Text style={tw("text-blue-600")}>Hello world</Text>;
-};
-```
-
-Build Tailwind styles in watch mode.
-
-```
-npm run dev:tailwind
-```
-
-<hr />
-
-<div align="center">
-<a href="#instagram"><img src="https://user-images.githubusercontent.com/99184393/210094642-427ffa8a-3ba6-4ade-99dd-7061ae6bf81c.png" alt="Instagram" width="" height="45" /></a>
-</div>
-
-### Setting Up StepZen
-
-![Apollo-GraphQL](https://img.shields.io/badge/-ApolloGraphQL-311C87?style=for-the-badge&logo=apollo-graphql)
+### Setting Up RapidAPI
 
 #### Create an account
 
-- Sign up for a StepZen account <a href='https://stepzen.com'>HERE</a>
+- Sign up for a RapidAPI account <a href='https://rapidapi.com/'>HERE</a>
 
-#### Running StepZen
+#### Working with API
 
-Install the CLI
+After creating the account search for JSeach API and subscribe the API then from Code Snippets of Endpoint
+copy the options bar and paste in `useFetch.js`
 
-```bash
-
-npm install -g stepzen
-
-```
-
-After installing the CLI, you can connect it to your account.
-
-Start by logging in using the following command:
-
-```bash
-
-stepzen login
-
-```
-
-You'll see a series of command prompts asking for your StepZen account name and admin key:
-
-```bash
-What is your account name?: {ACCOUNT}
-What is your admin key?: {ADMINKEY}
-```
-
-Your Admin Key and API Key\*\*
-
-When you get your account, log in to StepZen and navigate to the <a href='https://dashboard.stepzen.com'>StepZen dashboard</a>, where you will find your account name, and the two keys you need for API authentication:
-
-#### stepzen init
-
-Initialize a StepZen workspace in the current directory.
-
-```bash
-stepzen init
-```
-
-curl
-
-```bash
-curl <<firebase_realtime_database/customers file link>>
-```
-
-#### GET requests
-
-Auto-generate your schemas and resolvers using the following StepZen CLI command:
-
-Order
-
-```bash
-stepzen import curl <<firebase_realtime_database/orders.json file link>> --query-type Order --query-name getOrders --name orders
-```
-
-Customer
-
-```bash
-stepzen import curl <<firebase_realtime_database/customer.json file link>> --query-type Customer --query-name getCustomer --name customer
-```
-
-Trackingitems
-
-```bash
-stepzen import curl <<firebase_realtime_database/trackingitems.json file link>> --query-type Trackingitems --query-name getTrackingitems --name trackingitems
-```
-
-Deploy
-
-```bash
-stepzen start
-```
+You might want to create different accounts for search functionality and job details page to avoid limit request errors.
 
 <hr />
 
 Other dependencies info
 
-<a href="https://github.com/Priyanshu88/UPS-App/blob/master/package.json" target="_blank">🔶 Dependency Info</a>
+<a href="https://github.com/Priyanshu88/Jobs_App/blob/main/package.json" target="_blank">🔶 Dependency Info</a>
 
 <!-- Run Locally -->
 
@@ -349,13 +206,13 @@ Other dependencies info
 Clone the project
 
 ```git
-git clone https://github.com/Priyanshu88/UPS-App.git
+git clone https://github.com/Priyanshu88/Jobs_App.git
 ```
 
 change directory
 
 ```bash
-cd UPS-App
+cd Jobs_App
 ```
 
 Install dependencies
@@ -408,4 +265,4 @@ expo publish
 
 Your Name - [@twitter_handle](https://twitter.com/Priyans75729802?s=09) - 2040020@sliet.ac.in
 
-Project Link: [https://github.com/Priyanshu88/UPS-App.git](https://github.com/Priyanshu88/UPS-App.git)
+Project Link: [https://github.com/Priyanshu88/UPS-App.git](https://github.com/Priyanshu88/Jobs_App.git)
