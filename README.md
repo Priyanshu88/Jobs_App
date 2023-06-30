@@ -265,4 +265,4 @@ expo publish
 
 Your Name - [@twitter_handle](https://twitter.com/Priyans75729802?s=09) - 2040020@sliet.ac.in
 
-Project Link: [https://github.com/Priyanshu88/UPS-App.git](https://github.com/Priyanshu88/Jobs_App.git)
+Project Link: [https://github.com/Priyanshu88/Jobs_App.git](https://github.com/Priyanshu88/Jobs_App.git)
