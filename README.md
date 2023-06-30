@@ -54,20 +54,18 @@
 ### :camera: Screenshots
 
 <div style="display: inline_block" align="center"><br>
- <img align="center" alt="React"  width="180" src="">
-  <img align="center" alt="React"  width="180" src="">
-  <img align="center" alt="React"  width="180" src="">
-    <img align="center" alt="React"  width="180" src="">
+ <img align="center" alt="React"  width="180" src="https://github.com/Priyanshu88/Jobs_App/assets/86107841/df544a58-9568-4b24-a1aa-b468b3a2b007">
+  <img align="center" alt="React"  width="180" src="https://github.com/Priyanshu88/Jobs_App/assets/86107841/ca6ca123-5016-4516-819b-0b4024707ea0">
+  <img align="center" alt="React"  width="180" src="https://github.com/Priyanshu88/Jobs_App/assets/86107841/1b09818f-8fb2-411d-ad4c-caa2fe79b9bc">
+
 </div>
 
 <br />
 
 ### :video_camera: Demo
 
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/MMe_KPNEn4I/0.jpg)](https://youtu.be/MMe_KPNEn4I)
 
-</a>
-
-  
 #### 🔴 Install the Expo Go app on your device and scan the code below (live demo)
 
 <a href="#instagram"><img src="https://github.com/Priyanshu88/Jobs_App/assets/86107841/3d16616d-e9e1-4ebb-a4bf-bd70fadaf4f5" alt="qr" width="200" height="200" /></a>
